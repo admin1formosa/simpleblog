@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+    <title>simpleblog - openshift</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph tags -->
+
+            <meta property="og:type" content="website"/>
+            <meta property="og:title" content="simpleblog"/>
+            <meta property="og:url" content=""/>
+            <meta property="og:description" content="simpleblog"/>
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/theme/css/pygments.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="" class="navbar-brand">simpleblog</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li >
+                            <a href="/category/2013fall.html">2013fall</a>
+                        </li>
+                        <li >
+                            <a href="/category/django.html">Django</a>
+                        </li>
+                        <li >
+                            <a href="/category/website.html">Website</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/archives.html"><i class="fa fa-th-list"></i>Archives</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</nav>
+<!-- /.navbar -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+            <article>
+                <h2><a href="/wang-zhan-jia-she.html">網站架設</a></h2>
+                <div class="summary"><p>本網站使用 <a href="http://cmsimple.cycu.org">cmsimplexh</a> 架設在 <a href="https://www.openshift.com/">openshift</a> 平台上(使用免費帳號 3 small gear account is free)</p>
+<p>網址使用 <a href="http://www.dot.tk">DotTK</a> 可免費使用一年 到最後兩個禮拜 可再次延長</p>
+<p>DNS 服務商使用</p>
+<p>使用免費 <a href="http://www.cloudns.net">cloudnsDNS</a></p>
+<p>在 DNS 轉址的部分</p>
+<p>CName 導向 <a href="https://www.openshift.com/">openshift</a> repo 之網址 帶有www (使用 cname 本站則是 www.simplemde.tk)</p>
+<p>A 導向 <a href="https://www.openshift.com/">openshift</a> repo 之網址則不須帶有 www(直接就是 simplemde.tk )</p>
+<p>需設置這兩種</p>
+                    <a class="btn btn-default btn-xs" href="/wang-zhan-jia-she.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+
+        </div>
+        <div class="col-sm-3 well well-sm" id="sidebar">
+
+<aside>
+    <section>
+        <ul class="list-group list-group-flush">
+                <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i>Social</h4></li>
+                    <li class="list-group-item"><a href="#"><i
+                            class="fa fa-you can add links in your config file-square fa-lg"></i>You can add links in your config file
+                    </a></li>
+                    <li class="list-group-item"><a href="#"><i
+                            class="fa fa-another social link-square fa-lg"></i>Another social link
+                    </a></li>
+
+
+
+                <li class="list-group-item"><a href="/"><h4><i class="fa fa-tags fa-lg"></i>Tags</h4></a></li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/thats.html">
+                                thats
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/virtualbox.html">
+                                virtualbox
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/cmsimplexh.html">
+                                cmsimplexh
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/django.html">
+                                django
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/openshift.html">
+                                openshift
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/awesome.html">
+                                awesome
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/jian-gou-wang-zhan.html">
+                                建構網站
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="/tag/dottk.html">
+                                dottk
+                            </a>
+                        </li>
+        </ul>
+    </section>
+</aside>        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <hr>
+        <p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p>
+
+
+        <p>&copy; 2014 kmollee &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a></p>
+    </div>
+</footer>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+
+</body>
+</html>
