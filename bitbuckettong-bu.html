@@ -3,7 +3,7 @@
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
-    <title>simpleblog - 建構網站</title>
+    <title>bitbucket同步</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -11,10 +11,10 @@
 
     <!-- Open Graph tags -->
 
-            <meta property="og:type" content="website"/>
-            <meta property="og:title" content="simpleblog"/>
-            <meta property="og:url" content=""/>
-            <meta property="og:description" content="simpleblog"/>
+            <meta property="og:type" content="article"/>
+            <meta property="og:title" content="bitbucket同步"/>
+            <meta property="og:url" content="/bitbuckettong-bu.html"/>
+            <meta property="og:description" content="針對在 OpenShift 上的 Python 3.3 網站程式碼, 設法與 https://2013falla@bitbucket.org/2013falla/2013c1project.git 同步 cd v:\c1project git remote add 2013c1project https://2013falla@bitbucket.org/2013falla/2013c1project.git git push -u 2013c1project --all # pushes up the repo and its refs for the first time git push -u 2013c1project ..."/>
 
     <!-- Bootstrap -->
         <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css"/>
@@ -40,7 +40,7 @@
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                        <li >
+                        <li class="active">
                             <a href="/category/2013fall.html">2013fall</a>
                         </li>
                         <li >
@@ -61,20 +61,48 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-            <article>
-                <h2><a href="/wang-zhan-jia-she.html">網站架設</a></h2>
-                <div class="summary"><p>本網站使用 <a href="http://cmsimple.cycu.org">cmsimplexh</a> 架設在 <a href="https://www.openshift.com/">openshift</a> 平台上(使用免費帳號 3 small gear account is free)</p>
-<p>網址使用 <a href="http://www.dot.tk">DotTK</a> 可免費使用一年 到最後兩個禮拜 可再次延長</p>
-<p>DNS 服務商使用</p>
-<p>使用免費 <a href="http://www.cloudns.net">cloudnsDNS</a></p>
-<p>在 DNS 轉址的部分</p>
-<p>CName 導向 <a href="https://www.openshift.com/">openshift</a> repo 之網址 帶有www (使用 cname 本站則是 www.simplemde.tk)</p>
-<p>A 導向 <a href="https://www.openshift.com/">openshift</a> repo 之網址則不須帶有 www(直接就是 simplemde.tk )</p>
-<p>需設置這兩種</p>
-                    <a class="btn btn-default btn-xs" href="/wang-zhan-jia-she.html">more ...</a>
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/bitbuckettong-bu.html"
+                       rel="bookmark"
+                       title="Permalink to bitbucket同步">
+                        bitbucket同步
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2014-01-07T00:00:00">週二 07 一月 2014</time>
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/bitbucket.html">bitbucket</a>
+</footer><!-- /.post-info -->                    </div>
                 </div>
-            </article>
-            <hr/>
+                <p>針對在 OpenShift 上的 Python 3.3 網站程式碼, 設法與 https://2013falla@bitbucket.org/2013falla/2013c1project.git 同步</p>
+<p>cd v:\c1project</p>
+<p>git remote add 2013c1project https://2013falla@bitbucket.org/2013falla/2013c1project.git</p>
+<p>git push -u 2013c1project --all # pushes up the repo and its refs for the first time</p>
+<p>git push -u 2013c1project --tags # pushes up any tags</p>
+<p>取得本網站的程式碼: git clone https://2013falla@bitbucket.org/2013falla/2013c1project.git</p>
+<p>一旦針對原先為 OpenShift Git repository 建立的專案程式碼, 進行上述處理後, git remote -v 會將 2013c1project 放在首位, 若隨後執行:</p>
+<p>git add .</p>
+<p>git commit -m "my commit note"</p>
+<p>git push</p>
+<p>之後, 將會內定將版本快照送到 2013c1project, 也就是 Bitbucket repository, 若要將同一 commit 送到 OpenShift, 則需要:</p>
+<p>git push origin</p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
 
         </div>
         <div class="col-sm-3 well well-sm" id="sidebar">
