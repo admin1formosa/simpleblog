@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/index.html</loc>
-<lastmod>2014-01-08T22:05:35-00:00</lastmod>
+<lastmod>2014-01-08T22:07:45-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2014-01-08T22:05:35-00:00</lastmod>
+<lastmod>2014-01-08T22:07:45-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2014-01-08T22:05:35-00:00</lastmod>
+<lastmod>2014-01-08T22:07:45-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2014-01-08T22:05:35-00:00</lastmod>
+<lastmod>2014-01-08T22:07:45-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -88,14 +88,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/tag/jian-gou-wang-zhan.html</loc>
-<lastmod>2014-01-08T00:00:00-00:00</lastmod>
+<loc>/tag/thats.html</loc>
+<lastmod>2014-01-07T00:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/cmsimplexh.html</loc>
+<loc>/tag/jian-gou-wang-zhan.html</loc>
 <lastmod>2014-01-08T00:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -109,21 +109,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/tag/dottk.html</loc>
+<loc>/tag/django.html</loc>
 <lastmod>2014-01-08T00:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/virtualbox.html</loc>
-<lastmod>2014-01-07T00:00:00-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/tag/django.html</loc>
+<loc>/tag/cmsimplexh.html</loc>
 <lastmod>2014-01-08T00:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -144,7 +137,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/tag/thats.html</loc>
+<loc>/tag/dottk.html</loc>
+<lastmod>2014-01-08T00:00:00-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/virtualbox.html</loc>
 <lastmod>2014-01-07T00:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
