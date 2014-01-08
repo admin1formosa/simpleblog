@@ -3,7 +3,7 @@
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
-    <title>simpleblog</title>
+    <title>simpleblog - Tags</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -61,93 +61,19 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-            <article>
-                <h2><a href="/djangojian-jie.html">django簡介</a></h2>
-                <div class="summary"><p><a href="http://www.slideshare.net/sivasubramaniam3/whats-new-in-django-16">what's new in django 1.6</a></p>
-<p>fat model, thin view, stupid template</p>
-<p>每一個 app 應該專注在自己簡單的事務上</p>
-<p>過於複雜則需分離成多個 app</p>
-<p>setting 的部分 最好分成</p>
-<ol>
-<li>base 基礎構成再 base完成</li>
-<li>local local dev</li>
-<li>staging</li>
-<li>test</li>
-<li>product</li>
-</ol>
-<p>完整 product 使用</p>
-<p>如有用 git 來做版本控制</p>
-<p>最好把 一些重要的東西 脫離這個</p>
-<p>如 secretkey api key 這些東西會造成安全上的一些問題</p>
-<p>啟動 server with setting</p>
-<div class="highlight"><pre><span class="n">django</span><span class="o">-</span><span class="n">admin ...</span></pre></div>
-                    <a class="btn btn-default btn-xs" href="/djangojian-jie.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="/wang-zhan-jia-she.html">網站架設</a></h2>
-                <div class="summary"><p>本網站使用 <a href="http://cmsimple.cycu.org">cmsimplexh</a> 架設在 <a href="https://www.openshift.com/">openshift</a> 平台上(使用免費帳號 3 small gear account is free)</p>
-<p>網址使用 <a href="http://www.dot.tk">DotTK</a> 可免費使用一年 到最後兩個禮拜 可再次延長</p>
-<p>DNS 服務商使用</p>
-<p>使用免費 <a href="http://www.cloudns.net">cloudnsDNS</a></p>
-<p>在 DNS 轉址的部分</p>
-<p>CName 導向 <a href="https://www.openshift.com/">openshift</a> repo 之網址 帶有www (使用 cname 本站則是 www.simplemde.tk)</p>
-<p>A 導向 <a href="https://www.openshift.com/">openshift</a> repo 之網址則不須帶有 www(直接就是 simplemde.tk )</p>
-<p>需設置這兩種</p>
-                    <a class="btn btn-default btn-xs" href="/wang-zhan-jia-she.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="/bitbuckettong-bu.html">bitbucket同步</a></h2>
-                <div class="summary"><p>針對在 OpenShift 上的 Python 3.3 網站程式碼, 設法與 https://2013falla@bitbucket.org/2013falla/2013c1project.git 同步</p>
-<div class="highlight"><pre><span class="k">cd</span> v:\c<span class="m">1</span>project
-
-git remote add <span class="m">2013</span>c<span class="m">1</span>project https:<span class="n">//2013falla@bitbucket.org/2013falla/2013c1project.git</span>
-
-git push -u <span class="m">2013</span>c<span class="m">1</span>project --all # pushes up the repo and its refs ...</pre></div>
-                    <a class="btn btn-default btn-xs" href="/bitbuckettong-bu.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="/my-super-post.html">My super title</a></h2>
-                <div class="summary"><blockquote>
-<p>this is hello worldqweqw</p>
-</blockquote>
-<h2>hello</h2>
-<h2>code</h2>
-<div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&#39;hello world&#39;</span><span class="p">)</span>
-</pre></div>
-
-
-<p><a href="http://google.com">google</a></p>
-<h1>this is about a tag</h1>
-<p>this is a tag about <a href="http://google.com" title="go">google</a></p>
-                    <a class="btn btn-default btn-xs" href="/my-super-post.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="/virtualboxjian-dan-shi-yong-ji-lu.html">virtualbox簡單使用紀錄</a></h2>
-                <div class="summary"><p>虛擬機軟體最出名的有兩家
-1. <a href="https://www.virtualbox.org/">virtualbox</a> - 免費，在被 oracle 收購前就已開放)
-2. <a href="http://www.vmware.com/tw/">vmware</a> - 部分收費</p>
-<p>功能上來說 <a href="http://www.vmware.com/tw/">vmware</a> 強過 <a href="https://www.virtualbox.org/">virtualbox</a> 很多，但本次只做簡單的工作...so....</p>
-<p>這次因為學校的 <code>creo server</code> 過於老舊導致硬碟掛點，所以打算使用 <a href="https://www.virtualbox.org/">virtualbox</a> 來做虛擬 <code>server</code> 認證</p>
-<h2>步驟</h2>
-<ol>
-<li>download <a href="https://www.virtualbox.org/">virtualbox</a></li>
-<li>install <a href="https://www.virtualbox.org/">virtualbox</a> and <code>drive</code>(包括顯卡 網卡 等)</li>
-<li>準備 OS 安裝光碟 or iso 等其他映像檔案</li>
-<li>開啟 <a href="https://www.virtualbox.org/">virtualbox</a> 確定其 網卡已成功安裝置 host OS</li>
-<li>在 <a href="https://www.virtualbox.org/">virtualbox ...</a></li></ol>
-                    <a class="btn btn-default btn-xs" href="/virtualboxjian-dan-shi-yong-ji-lu.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-
+    <section id="tags">
+        <h1>Tags for simpleblog</h1>
+        <ul>                <li><a href="/tag/awesome.html">awesome</a> (1)</li>
+                <li><a href="/tag/bitbucket.html">bitbucket</a> (1)</li>
+                <li><a href="/tag/cmsimplexh.html">cmsimplexh</a> (1)</li>
+                <li><a href="/tag/django.html">django</a> (1)</li>
+                <li><a href="/tag/dottk.html">dottk</a> (1)</li>
+                <li><a href="/tag/jian-gou-wang-zhan.html">建構網站</a> (1)</li>
+                <li><a href="/tag/openshift.html">openshift</a> (1)</li>
+                <li><a href="/tag/thats.html">thats</a> (1)</li>
+                <li><a href="/tag/virtualbox.html">virtualbox</a> (1)</li>
+        </ul>
+    </section>
         </div>
         <div class="col-sm-3 well well-sm" id="sidebar">
 

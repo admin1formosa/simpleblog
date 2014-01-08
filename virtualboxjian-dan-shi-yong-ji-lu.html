@@ -3,7 +3,7 @@
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
-    <title>simpleblog</title>
+    <title>virtualbox簡單使用紀錄</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -11,10 +11,10 @@
 
     <!-- Open Graph tags -->
 
-            <meta property="og:type" content="website"/>
-            <meta property="og:title" content="simpleblog"/>
-            <meta property="og:url" content=""/>
-            <meta property="og:description" content="simpleblog"/>
+            <meta property="og:type" content="article"/>
+            <meta property="og:title" content="virtualbox簡單使用紀錄"/>
+            <meta property="og:url" content="/virtualboxjian-dan-shi-yong-ji-lu.html"/>
+            <meta property="og:description" content="虛擬機軟體最出名的有兩家 1. virtualbox - 免費，在被 oracle 收購前就已開放) 2. vmware - 部分收費 功能上來說 vmware 強過 virtualbox 很多，但本次只做簡單的工作...so.... 這次因為學校的 creo server 過於老舊導致硬碟掛點，所以打算使用 virtualbox 來做虛擬 server 認證 步驟 download virtualbox install virtualbox and drive(包括顯卡 網卡 等) 準備 OS 安裝光碟 or iso 等其他映像檔案 開啟 virtualbox 確定其 網卡已成功安裝置 host OS 在 virtualbox ..."/>
 
     <!-- Bootstrap -->
         <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css"/>
@@ -40,7 +40,7 @@
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                        <li >
+                        <li class="active">
                             <a href="/category/2013fall.html">2013fall</a>
                         </li>
                         <li >
@@ -61,77 +61,33 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-            <article>
-                <h2><a href="/djangojian-jie.html">django簡介</a></h2>
-                <div class="summary"><p><a href="http://www.slideshare.net/sivasubramaniam3/whats-new-in-django-16">what's new in django 1.6</a></p>
-<p>fat model, thin view, stupid template</p>
-<p>每一個 app 應該專注在自己簡單的事務上</p>
-<p>過於複雜則需分離成多個 app</p>
-<p>setting 的部分 最好分成</p>
-<ol>
-<li>base 基礎構成再 base完成</li>
-<li>local local dev</li>
-<li>staging</li>
-<li>test</li>
-<li>product</li>
-</ol>
-<p>完整 product 使用</p>
-<p>如有用 git 來做版本控制</p>
-<p>最好把 一些重要的東西 脫離這個</p>
-<p>如 secretkey api key 這些東西會造成安全上的一些問題</p>
-<p>啟動 server with setting</p>
-<div class="highlight"><pre><span class="n">django</span><span class="o">-</span><span class="n">admin ...</span></pre></div>
-                    <a class="btn btn-default btn-xs" href="/djangojian-jie.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="/wang-zhan-jia-she.html">網站架設</a></h2>
-                <div class="summary"><p>本網站使用 <a href="http://cmsimple.cycu.org">cmsimplexh</a> 架設在 <a href="https://www.openshift.com/">openshift</a> 平台上(使用免費帳號 3 small gear account is free)</p>
-<p>網址使用 <a href="http://www.dot.tk">DotTK</a> 可免費使用一年 到最後兩個禮拜 可再次延長</p>
-<p>DNS 服務商使用</p>
-<p>使用免費 <a href="http://www.cloudns.net">cloudnsDNS</a></p>
-<p>在 DNS 轉址的部分</p>
-<p>CName 導向 <a href="https://www.openshift.com/">openshift</a> repo 之網址 帶有www (使用 cname 本站則是 www.simplemde.tk)</p>
-<p>A 導向 <a href="https://www.openshift.com/">openshift</a> repo 之網址則不須帶有 www(直接就是 simplemde.tk )</p>
-<p>需設置這兩種</p>
-                    <a class="btn btn-default btn-xs" href="/wang-zhan-jia-she.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="/bitbuckettong-bu.html">bitbucket同步</a></h2>
-                <div class="summary"><p>針對在 OpenShift 上的 Python 3.3 網站程式碼, 設法與 https://2013falla@bitbucket.org/2013falla/2013c1project.git 同步</p>
-<div class="highlight"><pre><span class="k">cd</span> v:\c<span class="m">1</span>project
-
-git remote add <span class="m">2013</span>c<span class="m">1</span>project https:<span class="n">//2013falla@bitbucket.org/2013falla/2013c1project.git</span>
-
-git push -u <span class="m">2013</span>c<span class="m">1</span>project --all # pushes up the repo and its refs ...</pre></div>
-                    <a class="btn btn-default btn-xs" href="/bitbuckettong-bu.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="/my-super-post.html">My super title</a></h2>
-                <div class="summary"><blockquote>
-<p>this is hello worldqweqw</p>
-</blockquote>
-<h2>hello</h2>
-<h2>code</h2>
-<div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&#39;hello world&#39;</span><span class="p">)</span>
-</pre></div>
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/virtualboxjian-dan-shi-yong-ji-lu.html"
+                       rel="bookmark"
+                       title="Permalink to virtualbox簡單使用紀錄">
+                        virtualbox簡單使用紀錄
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2014-01-07T00:00:00">週二 07 一月 2014</time>
+    </span>
 
 
-<p><a href="http://google.com">google</a></p>
-<h1>this is about a tag</h1>
-<p>this is a tag about <a href="http://google.com" title="go">google</a></p>
-                    <a class="btn btn-default btn-xs" href="/my-super-post.html">more ...</a>
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/virtualbox.html">virtualbox</a>
+</footer><!-- /.post-info -->                    </div>
                 </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="/virtualboxjian-dan-shi-yong-ji-lu.html">virtualbox簡單使用紀錄</a></h2>
-                <div class="summary"><p>虛擬機軟體最出名的有兩家
+                <p>虛擬機軟體最出名的有兩家
 1. <a href="https://www.virtualbox.org/">virtualbox</a> - 免費，在被 oracle 收購前就已開放)
 2. <a href="http://www.vmware.com/tw/">vmware</a> - 部分收費</p>
 <p>功能上來說 <a href="http://www.vmware.com/tw/">vmware</a> 強過 <a href="https://www.virtualbox.org/">virtualbox</a> 很多，但本次只做簡單的工作...so....</p>
@@ -142,11 +98,18 @@ git push -u <span class="m">2013</span>c<span class="m">1</span>project --all # 
 <li>install <a href="https://www.virtualbox.org/">virtualbox</a> and <code>drive</code>(包括顯卡 網卡 等)</li>
 <li>準備 OS 安裝光碟 or iso 等其他映像檔案</li>
 <li>開啟 <a href="https://www.virtualbox.org/">virtualbox</a> 確定其 網卡已成功安裝置 host OS</li>
-<li>在 <a href="https://www.virtualbox.org/">virtualbox ...</a></li></ol>
-                    <a class="btn btn-default btn-xs" href="/virtualboxjian-dan-shi-yong-ji-lu.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
+<li>在 <a href="https://www.virtualbox.org/">virtualbox</a> 選擇 OS 類型，並安裝</li>
+<li>安裝完成，關閉 <a href="https://www.virtualbox.org/">virtualbox</a>， 設定與 host 共用光碟機</li>
+<li>網路調整成僅限主機介面卡(僅在自己電腦認證)，如需暴露在外則要改成橋接(須加裝一網卡)，<code>mac 網卡位置</code> 需改成與原本 creo 綁定的 <code>mac address</code> 相同</li>
+<li>在 virtualbox 內安裝認證server</li>
+<li>確定在 host 能夠 telnet <a href="https://www.virtualbox.org/">virtualbox</a> 內的 server port(7788)</li>
+<li>在 <a href="https://www.virtualbox.org/">virtualbox</a> 內確定 server 服務有確實啟動</li>
+<li>將在host 的 creo 認證主機指向 <a href="https://www.virtualbox.org/">virtualbox</a> 的虛擬環境 內部IP</li>
+</ol>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
 
         </div>
         <div class="col-sm-3 well well-sm" id="sidebar">
